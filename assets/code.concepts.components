@@ -1,0 +1,28 @@
+const element = <div />;
+
+const element = <Satellite name="Zoe" cost={0.99} />; //JSX
+
+class Presentation extends React.Component {
+
+  componentDidMount() {
+    // do something
+  }
+
+  componentWillUnmount() {
+    // do something else
+  }
+
+  render() {
+    return <h1>A valid ReactJS component.</h1>
+  }
+}
+
+function SatelliteCluster(props) {
+  return (
+    <div>
+      <Satellite name="props.zoe" />
+      <Satellite name="props.terra" />
+      <Satellite name="props.hubble" />
+    </div>
+  );
+};

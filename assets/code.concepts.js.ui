@@ -1,0 +1,20 @@
+export const MissionList = (props) => {
+  const missions = {};
+
+  return (
+    <ul>
+      {
+        missions.map( (mission) => (
+          <li className='mission' key={number.toString()} >
+            (mission.hasSatellite) ? <Satellite data={mission.data} /> :
+          </li>
+        )
+      }
+    </ul>
+  );
+}
+
+ReactDOM.render(
+  <MissionList />,
+  document.getElementById('root')
+);

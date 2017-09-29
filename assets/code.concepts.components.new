@@ -1,0 +1,20 @@
+//
+// Components, Components, Components ,Components
+//
+
+
+//
+// JS expressed as ui. use a real nasa api and show working example after code.
+// desc. Component is doing alot of work but this is pure js being express as ui. very powerfull
+//
+
+
+//
+// stateful vs stateless aka encapsulation. we saw some of this already.
+// Container and Presentational Components
+// do a little as possible in components.
+// Reusability.. separated our data-fetching and rendering concerns. made our CommentList component reusable.
+// // statefull containers fetch data and renders the stateless components. thats pretty much it.
+//
+
+// last example got the job done, but its missed the point of reactjs. the juice. lets fix this.

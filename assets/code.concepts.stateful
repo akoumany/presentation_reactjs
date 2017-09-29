@@ -1,0 +1,21 @@
+const MissionListContainer = (props) =>{
+  const activeMissions = {}; // network request active missions
+  return <MissionList missions={activeMissions} pagination={props.pagination} />
+}
+
+const MissionList = (props) => {
+  return (
+    <ul>
+      {props.activeMissions.map(mission => (
+        <li className='mission' key={number.toString()} >
+          (mission.hasSatellite) ? <Satellite data={mission.data} /> :
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+ReactDOM.render(
+  <MissionListContainer pagination={10}/>,
+  document.getElementById('root')
+);

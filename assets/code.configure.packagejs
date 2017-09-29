@@ -1,0 +1,21 @@
+{
+  "name": "npm_babel_webpack",
+  "version": "1.0.0",
+  "description": "https://facebook.github.io/react/docs/installation.html",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -p",
+    "dev": "webpack -d --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.6.0"
+  }
+}
