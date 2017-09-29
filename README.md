@@ -1,7 +1,7 @@
 # ReactJS Fundemental Presentation
 
 ## Reference
-This presentation was made with [spectacle-code-slide](https://github.com/thejameskyle/spectacle-code-slide).
+This presentation was made with [spectacle](https://github.com/FormidableLabs/spectacle).
 
 ## Run
 
