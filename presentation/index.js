@@ -36,6 +36,7 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   city: require("../assets/city.jpg"),
+  marraforni: require("../assets/marraforni.png"),
   shiaLabeoufMagicGif
 };
 
@@ -132,7 +133,7 @@ export default class Presentation extends React.Component {
           <Appear>
             <Heading size={5} textColor="primary">
               A JavaScript library for building large web apps that consumes lots of data
-              without expensinve reloading of the DOM.
+              without expensive reloading of the DOM.
             </Heading>
           </Appear>
         </Slide>
@@ -280,19 +281,6 @@ export default class Presentation extends React.Component {
             ]}
         />
 
-        {/* lets see some code - reactified */}
-        <Slide transition={["fade"]} bgColor="background">
-          <Heading size={1} textColor="primary" fit caps>Lets see some code</Heading>
-          <Notes>
-            <h4>Slide notes</h4>
-            <ol>
-              <li>open atom</li>
-              <li>cd reactified</li>
-              <li>npm start</li>
-            </ol>
-          </Notes>
-        </Slide>
-
         {/* 3 Core Concepts */}
         <Slide transition={["fade"]} bgColor="background">
           <Heading size={1} caps fit textColor="title">
@@ -318,7 +306,7 @@ export default class Presentation extends React.Component {
               { loc: [2, 3], note: "Define your own components" },
               { loc: [2, 3], note: "Pass in a JSX attributes as a single JS object called props" },
               { loc: [4, 19], note: "A class component has its own lifecycle" },
-              { loc: [6, 9], note: "Runs after a component output has been rendered to the DOM." },
+              { loc: [6, 9], note: "Runs after a component has been rendered to the DOM." },
               { loc: [10, 13], note: "Runs when a component is being removed from the DOM" },
               { loc: [14, 17], note: "We always render a single React element" },
               { loc: [19, 28], note: "A functional components accepts a single props argument and returns a React element" }
@@ -347,10 +335,9 @@ export default class Presentation extends React.Component {
             code={require("raw-loader!../assets/code.concepts.stateful")}
             ranges={[
               { loc: [0, 23], title: "stateful vs stateless" },
-              { loc: [0, 23], note: "Last code missed the point of reactjs. Lets fix this." },
               { loc: [0, 5], note: "Stateless, Functional, Container, Smart Component" },
-              { loc: [5, 17], note: "Statefull, Presentational or Dumb Component data-fetching and rendering concerns." },
-              { loc: [0, 17], note: "Seperate data-fetching and rendering concerns." },
+              { loc: [5, 17], note: "Statefull, Presentational or Dumb Component." },
+              { loc: [0, 17], note: "Seperate data-fetching from rendering components." },
               { loc: [17, 22], note: "Modular and more control" }
             ]}
         />
@@ -358,7 +345,7 @@ export default class Presentation extends React.Component {
         {/* lets see an example */}
         <Slide transition={["fade"]} bgColor="background">
           <Heading size={1} textColor="title" fit caps>Lets see some code</Heading>
-          <Link>
+          <Link href="https://github.com/akoumany/reactified" >
             <Heading size={1} textColor="tertiary" fit>
               https://github.com/akoumany/reactified
             </Heading>
@@ -366,17 +353,15 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
-
-          <Appear fid="1">
+            <Image src={images.marraforni.replace("/", "")} margin="0px auto 40px" height="200px"/>
             <Heading size={1} caps fit textColor="title">
               Thank You!
             </Heading>
-          </Appear>
-          <Appear fid="2">
-            <Heading size={1} caps fit textColor="tertiary">
-              Linkedin.com/in/komiakoumany
-            </Heading>
-          </Appear>
+            <Link href="https://Linkedin.com/in/komiakoumany" >
+              <Heading size={1} caps fit textColor="tertiary">
+                Linkedin.com/in/komiakoumany
+              </Heading>
+            </Link>
         </Slide>
 
       </Deck>
