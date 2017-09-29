@@ -274,7 +274,7 @@ export default class Presentation extends React.Component {
             lang="js"
             code={require("raw-loader!../assets/code.configure.packagejs")}
             ranges={[
-              { loc: [0, 20], title: "quick package.js edit" },
+              { loc: [0, 20], title: "use npm as a build tool" },
               { loc: [5, 9], title: "no more ./node_modules/.bin/webpack -d" },
               { loc: [6, 7], title: "npm start" },
               { loc: [7, 8], title: "npm run dev" }
@@ -284,13 +284,13 @@ export default class Presentation extends React.Component {
         {/* 3 Core Concepts */}
         <Slide transition={["fade"]} bgColor="background">
           <Heading size={1} caps fit textColor="title">
-            Core concept behind ReactJS
+            Core concepts behind ReactJS
           </Heading>
 
           <List textColor="primary">
-            <ListItem>components, components, components</ListItem>
-            <ListItem>JavaScript expressed as UI</ListItem>
-            <ListItem>stateful vs stateless</ListItem>
+            <Appear><ListItem>components, components, components</ListItem></Appear>
+            <Appear><ListItem>JavaScript expressed as UI</ListItem></Appear>
+            <Appear><ListItem>stateful vs stateless components</ListItem></Appear>
           </List>
         </Slide>
 
@@ -302,13 +302,13 @@ export default class Presentation extends React.Component {
             code={require("raw-loader!../assets/code.concepts.components")}
             ranges={[
               { loc: [0, 28], title: "so many ways to write a component" },
-              { loc: [0, 1], note: "Components can represent DOM tags" },
-              { loc: [2, 3], note: "Define your own components" },
+              { loc: [0, 1], note: "RealJS elements can represent DOM tags" },
+              { loc: [2, 3], note: "Define your own elements" },
               { loc: [2, 3], note: "Pass in a JSX attributes as a single JS object called props" },
               { loc: [4, 19], note: "A class component has its own lifecycle" },
               { loc: [6, 9], note: "Runs after a component has been rendered to the DOM." },
               { loc: [10, 13], note: "Runs when a component is being removed from the DOM" },
-              { loc: [14, 17], note: "We always render a single React element" },
+              { loc: [14, 17], note: "Returns a single React element" },
               { loc: [19, 28], note: "A functional components accepts a single props argument and returns a React element" }
             ]}
         />
@@ -322,7 +322,8 @@ export default class Presentation extends React.Component {
             ranges={[
               { loc: [0, 21], title: "JavaScript expressed as UI" },
               { loc: [1, 2], note: "Fetch list of current nasa missions" },
-              { loc: [6, 11], note: "Iterate and create <li>hasSatellite</li>" },
+              { loc: [6, 11], note: "Iterate the return fetched data" },
+              { loc: [8, 9], note: "Create only missions with satellites" },
               { loc: [16, 21], note: "Render the list" }
             ]}
         />
@@ -338,7 +339,7 @@ export default class Presentation extends React.Component {
               { loc: [0, 5], note: "Stateless, Functional, Container, Smart Component" },
               { loc: [5, 17], note: "Statefull, Presentational or Dumb Component." },
               { loc: [0, 17], note: "Seperate data-fetching from rendering components." },
-              { loc: [17, 22], note: "Modular and more control" }
+              { loc: [17, 24], note: "Modular and more control" }
             ]}
         />
 

@@ -16,6 +16,9 @@ const MissionList = (props) => {
 }
 
 ReactDOM.render(
-  <MissionListContainer pagination={10}/>,
+  <div>
+    <MissionListContainer filter={"mars"} pagination={5} />
+    <MissionListContainer pagination={8} />
+  </div>,
   document.getElementById('root')
 );
