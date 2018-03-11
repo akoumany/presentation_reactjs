@@ -1,4 +1,4 @@
-# ReactJS Fundemental Presentation
+# ReactJS Fundamental Presentation
 
 ## Reference
 This presentation was made with [spectacle](https://github.com/FormidableLabs/spectacle).
